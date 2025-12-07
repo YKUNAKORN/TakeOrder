@@ -137,3 +137,30 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Ignore local env and secret files
+.env.local
+.env.*.local
+*.local.env
+# Private keys and certs
+*.pem
+*.key
+*.p12
+id_*
+# Local DB / dev data
+*.sqlite
+*.db
+.docker/
+# Supabase local config
+.supabase/
+supabase/config/*.json
+# Cloud credentials
+google-service-account.json
+credentials.json
+aws-credentials
+# VSCode workspace (may contain tokens)
+.vscode/*.code-workspace
+.vscode/settings.json
+# Other common sensitive files
+secrets.json
+*.secret
