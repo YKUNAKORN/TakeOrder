@@ -2,8 +2,81 @@
 
 @theme {
   --font-sans: "Prompt", sans-serif;
+  
+  /* Colors */
+  --color-primary: #D72638;
+  --color-bg-main: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-boder: #F3F4F6;
+  
+  /* Text Colors */
+  --color-text-heading: #111827;
+  --color-text-subheading: #9ca3af;
+
+  /* Status Colors */
+  --color-status-txtawaiting: #DC2626;
+  --color-status-bgawaiting: #FEE2E2;
+  --color-status-txtcooking: #D97706;
+  --color-status-bgcooking: #FEF3C7;
+  --color-status-txtserved: #059669;
+  --color-status-bgserved: #D1FAE5;
+  --color-status-txtunpaid: #2563EB;
+  --color-status-bgunpaid: #DBEAFE;
+  --color-status-txtpaid: #9333EA;
+  --color-status-bgpaid: #F3E8FF;
+
+  /* PnL Colors */
+  --color-pnl-profit: #059669;
+  --color-pnl-loss: #DC2626;
 }
 
 :root {
   font-family: "Prompt", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d1d5db;
+}
+
+/* Global interactive cursor rules
+   Apply pointer cursor on hover for common interactive elements so
+   pages show expected pointer behavior without editing every component.
+*/
+button:hover,
+a:hover,
+[role="button"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.btn:hover,
+.link:hover,
+.nav-link:hover,
+.sidebar-item:hover,
+.clickable:hover,
+.interactive:hover {
+  cursor: pointer;
+}
+
+/* Utility class for explicit use in components */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Preserve a Tailwind-like utility for projects that reference it directly */
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
