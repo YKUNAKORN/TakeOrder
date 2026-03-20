@@ -165,4 +165,11 @@ aws-credentials
 secrets.json
 *.secret
 
+# Optional
 /.agents/
+BACKEND_SETUP.md
+/backend/README.md
+DEVELOPMENT.md
+QUICKSTART.md
+setup-backend.sh
+PULL_REQUEST_TEMPLATE.md
