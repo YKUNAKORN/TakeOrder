@@ -1,12 +1,13 @@
-package com.takeorder;
+package com.takeorder.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TakeOrderApplication {
+public class BackendApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(TakeOrderApplication.class, args);
+    SpringApplication.run(BackendApplication.class, args);
   }
+
 }
